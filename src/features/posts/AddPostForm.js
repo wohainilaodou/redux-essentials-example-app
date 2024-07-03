@@ -14,7 +14,7 @@ export const AddPostForm = ()=>{
         if(title && content)
         {
             dispatch(
-                postAdded({id:nanoid,title,content})
+                postAdded({id:nanoid(),title,content})
             )
             setTitle('')
             setContent('')
