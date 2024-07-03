@@ -16,7 +16,7 @@ const rollupPlugin = (matchers) => ({
 
 // The original example app code used `.js` for all component files,
 // which worked with Create React App.
-// Now that the template uses Vite, we mimic that behavior.
+// Now that the template users Vite, we mimic that behavior.
 export default defineConfig({
   plugins: [react()],
   build: {
