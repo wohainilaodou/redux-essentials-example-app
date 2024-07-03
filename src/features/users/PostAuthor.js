@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 export const PostAuthor = ({ userId }) => {
   console.log(userId)
   const author = useSelector((state) =>
-    state.users.find((user) => user.id === userId),
+    state.users.find((user) => user.id === String(userId)),
   )
   console.log('author', author)
 
